@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirPods Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@0400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+
+            <h1>AirPads Store</h1>
+
+            <form>
+                <input type="search" placeholder="Look for">
+                <button type="submit">Find</button>
+            </form>
+        </div>
+
+        <div class="botao-menu">
+            <button type="button">View the Menu</button>
+        </div>
+
+        <nav class="container">
+            <ul class="menu">
+                <li>
+                    Airpods 2nd
+
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">AirPods 2nd</a>
+                        </li>
+                        <li>
+                            <a href="#">AirPods Pro</a>
+                        </li>
+                        <li>
+                            <a href="#">Accessories</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    Airpods 3rd
+
+                    <ul class="submenu">
+                        <li>
+                            <a href="#"> Airpods 3rd</a>
+                        </li>
+                        <li>
+                            <a href="#"> Accessories</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    Airpods Max
+
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Airpods Max</a>
+                        </li>
+                        <li>
+                            <a href="#">Accessories</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="clear"></div>
+        </nav>
+
+    </header>
+
+    <div class="conteudo container">
+
+        <main>
+
+            <section class="about">
+                <h2>About the Store</h2>
+                <article class="choose">
+                    <a href="#">
+                        <img src="./imagens/Apple Store.jpg"/>
+                        <h3>
+                            The Apple Store is renowned for offering a unique shopping experience, providing customers with a modern and minimalist environment. With its iconic wooden tables and elegantly arranged products, the Apple Store creates an inviting space for technology enthusiasts.
+                        </h3>
+                    </a>
+                </article>
+            </section>
+
+            <section>
+                <h2>Choose your new Airpods</h2>
+                <div class="news">
+                    <article class="choose">
+                        <a href="#">
+                            <img src="./imagens/1 gera"/>
+                            <h3>
+                                With plenty of talk and listen time, voice-activated Siri access, and an available wireless charging case, AirPods deliver an incredible experience.
+                            </h3>
+                        </a>
+                    </article>
+    
+                    <article class="choose">
+                        <a href="#">
+                            <img src="./imagens/3 gera" />
+                            <h3>
+                                Personalized Spatial Audio with dynamic head tracking places sounds all around you to create a three-dimensional listening experience for music, TV shows and more.
+                            </h3>
+                        </a>
+                    </article>
+    
+                    <article class="choose">
+                        <a href="#">
+                            <img src="./imagens/max" />
+                            <h3>
+                                Introducing AirPods Max — a perfect balance of exhilarating high-fidelity audio and the effortless magic of AirPods. The ultimate personal listening experience is here.
+                            </h3>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.botao-menu button').click(function() {
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>

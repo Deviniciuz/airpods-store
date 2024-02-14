@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0 0;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 56px;
+}
+
+form {
+    margin-top: 60px; /* Exemplo de margem superior */
+}
+
+input{
+    width: 200px; /* Largura da barra de pesquisa */
+    height: 25px; /* Altura da barra de pesquisa */
+    padding: 5px; /* Preenchimento interno */
+    border: 1px solid #ccc; /* Estilo da borda */
+    border-radius: 5px; /* Borda arredondada */
+    background-color: #f0f0f0; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+
+}
+
+button {
+    background-color: #fff; /* Cor de fundo do botão */
+    color: #050000; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 5px 15px; /* Preenchimento interno do botão */
+    border-radius: 5px; /* Borda arredondada do botão */
+    height: 25px;
+    cursor: pointer;
+}
+
+.submenu {
+    display: none;
+    border: 1px solid #fff;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    width: 120px;
+    top: 100%;
+}
+
+.menu > li {
+    color: #fff;
+    float: left;
+    list-style: none;
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
+}
+
+.clear {
+    clear: both;
+}
+
+.menu li:hover .submenu {
+    display:block;
+}
+
+.menu li:hover {
+    border-color: #fff;
+}
+
+.submenu li {
+    display:block;
+    padding: 8px;
+}
+
+h1 {
+    color: #fff;
+}
+
+
+body {
+    background-image: url(./imagens/airpods-Fundo.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0px;
+    height: 100vh;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-left: 20px;
+
+}
+
+.choose img {
+    display: block;
+    margin: 0 auto;
+    max-width: 320px;
+    max-height: 320px;
+    margin-bottom: 0px;
+}
+
+.about {
+    margin-bottom: 56px;
+    color: #fff;
+}
+
+.about .choose a {
+    display: flex;
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.about .choose img {
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+}
+
+section h2 {
+    margin-bottom: 32px;
+    color: #fff;
+}
+
+.news {
+    display: grid;
+    grid-template-columns:repeat(3, 33%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.news img {
+    width: 70%;
+    height: auto;
+}
+
+.news a {
+    font-size: 0.8em;
+}
+
+@media screen and (max-width: 767px) {
+    .conteudo {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+    
+    .about .choose a {
+        display: block;
+        font-size: 1.5em;
+    }
+    
+    .about .choose img {
+        margin-right: 0px;
+
+
+    }
+
+    .news {
+        display: block;
+    }
+
+    .news .choose {
+        margin-bottom: 32px;;
+    }
+
+    header div.container {
+        flex-direction: column;
+    }
+
+    .submenu {
+        display: block;
+        width: 100%px;
+        position: relative;
+        border: none;
+    }
+    
+    .menu {
+        display: none;
+
+    }
+
+    .menu > li {
+        clear: both;
+    }
+    
+    .submenu li {
+        display:block;
+        padding: 8px;
+    }
+
+    .botao-menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        padding-bottom: 16px;
+
+    }
+
+    .botao-menu button {
+        cursor: pointer;
+        background-color: #fff;
+        padding: 8px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .botao-menu {
+        display: none;
+    }
+
+    .about .choose a {
+        font-size: 1.5em;
+    }
+
+    .news {
+        grid-template-columns: repeat(2, 49%);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .botao-menu {
+        display: none;
+    }
+}
